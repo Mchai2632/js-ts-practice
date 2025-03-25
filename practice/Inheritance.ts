@@ -1,23 +1,23 @@
 class Animal {
-  name: string;
+    name: string;
 
-  constructor(name: string) {
-    this.name = name;
-  }
+    constructor(name: string) {
+        this.name = name;
+    }
 
-  makeSound() {
-    return "Some generic sound";
-  }
+    makeSound() {
+        return "Some generic sound";
+    }
 }
 
 class Dog extends Animal {
-  override makeSound(): string {
-    return "Woof woof!";
-  }
+    override makeSound(): string {
+        return "Woof woof!";
+    }
 
-  fetch() {
-    return "Fetching the ball!";
-  }
+    fetch() {
+        return "Fetching the ball!";
+    }
 }
 
 const dog = new Dog("Khaki");
